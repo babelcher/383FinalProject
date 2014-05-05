@@ -15,7 +15,6 @@ A Functionality-Displays the time to the viewer.
 
 #### Timeline
 - Getting the hardware finalized and built-Lesson 35
-- Lighting up the LEDs only for brief portion of the circle-Lesson 36
 - Getting required functionality-Lesson 37
 - B Functionality-Lesson 38
 - A Functionality-Lesson 39
