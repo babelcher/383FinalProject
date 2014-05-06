@@ -44,16 +44,11 @@ end top;
 
 architecture Behavioral of top is
 
-	type light_state is
-		(lit_up, not_lit);
-	signal light_state_reg, light_state_next: light_state;
-	signal COUNTER: std_logic_vector(7 downto 0) := (others => '0');
-	signal PRESCALER: std_logic_vector(25 downto 0);
-	signal light_on: std_logic_vector(6 downto 0);
+	
+	signal led_reg: std_logic_vector(6 downto 0);
 	signal count_reg : unsigned(10 downto 0):= "00000000000";
-	signal count_next : unsigned(10 downto 0);
---	signal velocity : unsigned(10 downto 0) := to_unsigned(600,11);
-	constant REVOLUTION : integer := 600;
+	signal first : std_logic;
+
 	
 begin
 
@@ -61,20 +56,24 @@ begin
 	
 	LightProcess: process(CLK, INFRARED)
 	begin
-		
+		if rising_edge(clk) then
 			if (INFRARED = '0') then
-				light_on <= "0000000";
+				led_reg <= "0000000";
+				first <= '1';
 			elsif (INFRARED = '1') then
-				light_on <= "1111111";
-				
+				led_reg <= "1111111";
+				first <= '0';
 			end if;
+		end if;
 		
 	end process;
 	
 
+
 	
-	
-	LED <= light_on;
+--output logic
+
+	LED <= led_reg;
 	
 
 
