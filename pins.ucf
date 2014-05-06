@@ -1,0 +1,13 @@
+NET "CLK" LOC = "P54";
+#NET "RESET" LOC = "P1";
+NET "LED<0>" LOC = "P58";
+NET "LED<1>" LOC = "P74";
+NET "LED<2>" LOC = "P59";
+NET "LED<3>" LOC = "P75";
+NET "LED<4>" LOC = "P85";
+NET "LED<5>" LOC = "P76";
+NET "LED<6>" LOC = "P86";
+
+#NET "LIGHT" LOC = "P58";
+NET "INFRARED" LOC = "P77";
+NET "BUTTON" LOC = "P41";
