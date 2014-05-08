@@ -1,5 +1,8 @@
-NET "CLK" LOC = "P54";
+NET "CLK" LOC = "P54" | PERIOD = 100 MHz;
+NET "CLK" CLOCK_DEDICATED_ROUTE = FALSE;
 #NET "RESET" LOC = "P1";
+
+#external LEDs
 NET "LED<0>" LOC = "P58";
 NET "LED<1>" LOC = "P74";
 NET "LED<2>" LOC = "P59";
@@ -8,6 +11,14 @@ NET "LED<4>" LOC = "P85";
 NET "LED<5>" LOC = "P76";
 NET "LED<6>" LOC = "P86";
 
+#LEDs on the board
+NET "LIGHT<0>" LOC = "P15";
+NET "LIGHT<1>" LOC = "P14";
+NET "LIGHT<2>" LOC = "P8";
+NET "LIGHT<3>" LOC = "P7";
+NET "LIGHT<4>" LOC = "P5";
+NET "LIGHT<5>" LOC = "P4";
+NET "LIGHT<6>" LOC = "P3";
+
 #NET "LIGHT" LOC = "P58";
 NET "INFRARED" LOC = "P77";
-NET "BUTTON" LOC = "P41";
