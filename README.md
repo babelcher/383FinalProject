@@ -27,7 +27,7 @@ I will try to keep to this timeline so that I will be finished on Lesson 39 and 
 Getting required functionality was 60% hardware and 40% software related. I had to use a different board that I would be able to spin. It became apparent to me that I could not spin the huge ones we have been using so I had to use a Digilent Basys board that is much smaller. I was able to get the base from Capt James Trimble and followed a design that he had used for a microcontroller when he was a cadet to mount and spin the board. Capt Trimble also provided me with the design of using an infrared emitter and detector pair to position the LEDs during each cycle.
 
 #### Test/Debug
-- Determing required functionality was difficult until I had set up the infrared detector circuit correctly. Once this was set up to give a logic '0' whenever it passed over the emitter the code was rather simple to write.
+- Determining required functionality was difficult until I had set up the infrared detector circuit correctly. Once this was set up to give a logic '0' whenever it passed over the emitter the code was rather simple to write.
 - I created a state machine in VHDL for B Functionality but have yet to make this work.
     - There are some timing issues that I am encountering when implementing this in hardware.
     - A testbench of the code shows that it is transitioning correctly through the desired states and giving the desired outputs but the LEDs are not lighting up correctly.
@@ -37,4 +37,4 @@ Getting required functionality was 60% hardware and 40% software related. I had 
 - [View a demo here!](https://www.youtube.com/watch?v=mZHVS3oJLbI&feature=youtu.be)
 
 #### Conclusion
-This final project was very fun (although frustrating at times) to create and implement. I will add ideas to this section as I think of them.
+This final project was very fun (although frustrating at times) to create and implement. I am confident that if given more time I could figure out the timing issues and issues going from a software testbench to implementing it on the hardware. I learned alot about building an entire design from the ground up, software and hardware related.
