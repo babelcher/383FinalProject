@@ -33,7 +33,8 @@ Getting required functionality was 60% hardware and 40% software related. I had 
     - A testbench of the code shows that it is transitioning correctly through the desired states and giving the desired outputs but the LEDs are not lighting up correctly.
 
 #### Demonstration
-Only required functionality is working at the moment.
+- Only required functionality is working at the moment.
+- [View a demo here!](https://www.youtube.com/watch?v=mZHVS3oJLbI&feature=youtu.be)
 
 #### Conclusion
 This final project was very fun (although frustrating at times) to create and implement. I will add ideas to this section as I think of them.
